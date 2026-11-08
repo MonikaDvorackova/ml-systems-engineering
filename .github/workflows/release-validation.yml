@@ -1,0 +1,12 @@
+name: Release validation
+on: [push, pull_request]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build
+      - run: cmake --build build
+      - run: ctest --test-dir build --output-on-failure
+      - run: g++ -std=c++17 -O2 benchmarks/matrix_bench.cpp -o /tmp/matrix_bench
+      - run: /tmp/matrix_bench
