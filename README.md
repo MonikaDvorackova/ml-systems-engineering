@@ -41,3 +41,7 @@ The kernel is a straightforward O(mkn) reference implementation, not BLAS-compet
 ## License
 
 MIT. Contributions should include a focused regression test and an explanation of changed assumptions.
+
+## Run without local setup
+
+Run [CI](https://github.com/MonikaDvorackova/ml-systems-engineering/actions/workflows/ci.yml) → **Run workflow** on `main`. GitHub provides the compiler, dependencies, and test environment. Local commands must be run from a cloned repository root, not your home directory.
