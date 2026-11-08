@@ -1,0 +1,9 @@
+name: Matrix kernel CI
+on: [push, pull_request]
+jobs:
+  cpp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile and run tests
+        run: g++ -std=c++17 -O2 -Wall -Wextra -Werror tests/matrix_test.cpp -o /tmp/matrix_test && /tmp/matrix_test
