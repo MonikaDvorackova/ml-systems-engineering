@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(ml_systems_engineering LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(vector_dot src/main.cpp)
+enable_testing()
+add_test(NAME vector_dot COMMAND vector_dot)
