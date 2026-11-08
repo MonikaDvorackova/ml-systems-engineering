@@ -45,3 +45,7 @@ MIT. Contributions should include a focused regression test and an explanation o
 ## Run without local setup
 
 Run [CI](https://github.com/MonikaDvorackova/ml-systems-engineering/actions/workflows/ci.yml) → **Run workflow** on `main`. GitHub provides the compiler, dependencies, and test environment. Local commands must be run from a cloned repository root, not your home directory.
+
+## Project showcase and feedback
+
+Part of a public [trustworthy AI and reliable ML research engineering portfolio](https://github.com/MonikaDvorackova/MonikaDvorackova#research-engineering-projects). For project scope, test coverage and limitations, see this README and the repository's GitHub Actions. Reproducible issues and narrowly scoped contributions are welcome. These reference implementations are not certified production systems.
