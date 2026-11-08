@@ -1,6 +1,7 @@
 #pragma once
 #include "matrix.h"
 #include <algorithm>
+#include <cstdint>
 #include <cmath>
 #include <limits>
 namespace ml {
